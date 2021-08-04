@@ -32,8 +32,9 @@ body{
 
 .header{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 22px 15px 0px 15px;
+    margin-bottom: 43px;
 }
 
 .button{
@@ -48,6 +49,13 @@ body{
     align-items: center;
     border-radius: 7px;
     transition-duration: 300ms;
+}
+
+.container-top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 107px;
 }
 
 .button:hover{
@@ -77,4 +85,76 @@ body{
 
 .button-header-wrapper .button--purple{
     margin-right: 15px;
+}
+
+.store-title{
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.button--small{
+    font-size: 14px;
+    height: 50px;
+    margin-right: 57px;
+}
+
+.text-field{
+    height: 50px;
+    width: 375px;
+    background-color: #3f3d56;
+    border: 1px solid #3f3d56;
+    border-radius: 7px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #ffffff;
+    outline: none;
+    transition-duration:300ms;
+}
+
+.text-field::placeholder{
+    color: #8d8ba4;
+}
+
+.text-field:focus{
+    border: 1px solid #6c63ff;
+}
+
+.container-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 59px;
+}
+
+.search-box{
+    display: flex;
+}
+
+.text-field--search{
+    margin-right: 19px;
+}
+
+.button-box{
+    display: flex;
+}
+
+.product{
+    background-color:#BFBFBF2E;
+    width:fit-content ;
+    margin: 27px 31px;
+    padding: 26px 19px;
+    border-radius: 16px;
+}
+
+.product-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
